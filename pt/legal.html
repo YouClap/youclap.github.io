@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Site Title -->
+    <title>YouClap - Get YouClap!</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="YouClap" />
+    <meta name="keywords" content="html5, ios, android, material design, application, mobile, app, snapchat, instagram, challenge" />
+    <meta name="author" content="YouClap" />
+
+    <!-- Mobile Specific Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Theme Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Preloader (Pace.js) -->
+    <script src="js/plugins/pace.min.js"></script>
+
+    <!-- Modernizr -->
+    <script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/detectizr.min.js"></script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="gray-bg">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="logo">
+        <img src="img/logo-middle.png" alt="YouClap">
+        <span>Youclap</span>
+      </div>
+    </div>
+
+    <!-- Fake scrollbar (when open popups/modals) -->
+    <div class="fake-scrollbar"></div>
+
+    <!-- Off-canvas Navigation -->
+    <div class="offcanvas-nav">
+      <!-- Head (Fixed Part) -->
+      <div class="nav-head">
+        <div class="top-bar">
+          <div class="nav-toggle" data-offcanvas="close"><i class="flaticon-list26"></i></div>
+          <!--<form class="search-box">
+            <span class="search-toggle search-icon"></span>
+            <input type="text" id="search-field">
+            <button type="submit" class="search-btn"><i class="search-icon"></i></button>
+          </form>-->
+          <div class="social-buttons">
+          	<a href="https://www.facebook.com/getYouClap/?__mref=message_bubble" target="_blank" class="sb-facebook"><i class="bi-facebook"></i></a>
+            <a href="https://twitter.com/getYouClap" target="_blank" class="sb-twitter"><i class="bi-twitter"></i></a>
+            <a href="https://plus.google.com/100821800411936523686" target="_blank" class="sb-google-plus"><i class="bi-gplus"></i></a>
+          </div>
+        </div>
+        <div href="#" class="offcanvas-logo scrollup">
+          <div class="icon"><img src="img/logo-big.png" alt="Youclap"></div>
+  
+          <div class="title">
+            YouClap!<br>&nbsp;&nbsp;&nbsp;<a href="index.html" class="btn btn-ghost btn-light">Get YouClap!</a>
+          </div>
+        </div>
+        <div class="resume"><span>Anyone can create a challenge, view videos or participate for a chance!<br><br>
+          Followers choose the best snaps in a more balanced manner!<br><br>
+          Clap posts made by other users!</span></div>
+        </div>
+        <!-- Body (Scroll Part) -->
+        <div class="nav-body">
+          <div class="overflow">
+            <div class="inner">
+              <!-- Navigation -->
+            </div>
+          </div>
+        </div>
+      </div><!-- Off-canvas Navigation End -->
+
+    <!--Modal (Signin/Signup Page)-->
+    <div class="modal fade" id="signin-page">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-form">
+            <div class="tab-content">
+              <!-- Sign in form -->
+              <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                <h3 class="modal-title">Sign In</h3>
+                <div class="form-group space-top-2x">
+                  <label for="si_email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="si-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <a class="helper-link" href="#">Forgot password?</a>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for Appica 2</a></div>
+              </form>
+              <!-- Sign up form -->
+              <form class="tab-pane transition scale fade" id="signup-form">
+                <h3 class="modal-title">Sign Up</h3>
+                <div class="form-group space-top-2x">
+                  <label for="su-email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password-repeat" class="sr-only">Repeat password</label>
+                  <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Subscribe for our news
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
+              </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+              <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+              <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Navbar -->
+    <header class="navbar navbar-fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="img/Logomarca.png" alt="YouClap">
+        </a>
+        
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <a href="index.html" class="btn btn btn-ghost btn-danger">Get YouClap!</a>
+          <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
+        </div>
+      </div>
+    </header><!-- Navbar End -->
+
+    <!-- Page Heading -->
+    <div class="page-heading text-right">
+      <div class="container">
+        <h2>Legal</h2>
+      </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="container">
+      <h1 style="max-width: 770px;">Termos e Condições de Utilização</h1>
+    </section>
+
+    <!-- Legal Notice -->
+    <section class="space-top-2x padding-bottom-2x">
+      <hr>
+      <div class="container">
+        <!-- Badge -->
+        <div class="badge alt-color-4">
+          <span class="icon"><i class="flaticon-correct7"></i></span>
+          Termos de ulitização
+        </div>
+        <div class="row space-top-3x">
+          <div class="col-lg-6 col-lg-offset-3 col-md-7 col-md-offset-2 col-sm-9">
+            <p>Ao utilizares a aplicação YouClap e respetivos Serviços, através do teu smartphone, concordas e consentes os presentes Termos de Utilização. Se não concordares com o presente Conteúdo, não deves aceder nem utilizar o Serviço YouClap.</p>
+            <dl class="space-top-2x">
+              <dt class="text-danger"><span>1</span>Termos Elementares de Utilização</dt>
+              <dd>Em primeiro lugar, deves criar uma conta YouClap para poderes aceder e usufruir dos nossos serviços. Para tal deverás fornecer alguns dados pessoais públicos para a criação do perfil de utilizador YouClap.
+              </dd>
+              <dd>Tens de ter, pelo menos, 13 anos de idade para usar o Serviço YouClap e respetiva aplicação. Caso o YouClap detete que tens idade inferior à permitida, iremos, de imediato, proceder ao bloqueio da conta e de todo o conteúdo associado à mesma.
+              </dd>
+              <dd>Não podes solicitar, recolher ou utilizar as credenciais de início de sessão de outros utilizadores do YouClap.
+              </dd>
+              <dd>És responsável por manter a respetiva palavra-passe confidencial e segura. Aconselhamos o uso de palavras-chave “fortes” (com uma combinação de letras minúsculas, maiúsculas, dígitos numéricos, e símbolos) quer na tua conta YouClap, quer em outras que estejam associadas ao YouClap. O YouClap não pode nem será responsável por qualquer perda ou dano decorrente de uma falha do próprio utilizador pelo não cumprimento dos requisitos acima referidos.
+              </dd>
+              <dd>És exclusivamente responsável pelo teu próprio comportamento e por quaisquer dados, texto, fotografias, vídeos, ficheiros, conteúdo que submetas, publiques ou exibas através da nossa aplicação. De realçar que todo o conteúdo que é enviado, será exibido na aplicação e poderá ser visualizado ou acedido por outros utilizadores. Só deves fornecer/submeter o conteúdo que te deixa confortável (quer pessoal, quer de terceiros) de ser partilhado com os outros utilizadores sob estes termos.
+              </dd>
+              <dd>Não podes usar o Serviço YouClap para qualquer finalidade ilegal ou não autorizada.
+              </dd>
+              <dd>
+Não podes publicar fotografias, vídeos, comentários com conteúdo violento, que mostre nudez, que seja discriminatório, ilegal, pornográfico, que incentive o ódio, que fomente distúrbios alimentares como anorexia e/ou bulimia. Não podes também difamar, perseguir, oprimir, abusar, assediar, ameaçar, usar, denegrir e/ou falsear a identidade de outrem (pessoa ou entidade). Para tua segurança, não deves publicar informação privada ou confidencial (seja de que utilizador for), tais como números de cartões de crédito, segurança social ou números de identificação nacional alternativa, números de telefone e endereços e-mail não públicos através do Serviço.
+O YouClap não se responsabiliza por qualquer comportamento que adotes e, caso tenhas tomado uma destas ações referidas anteriormente, a tua conta será bloqueada pela nossa equipa de controlo e ética.
+              </dd>
+              <dd>És responsável por qualquer atividade que ocorra através da tua respetiva conta e concordas que não irás vender, transferir, licenciar ou ceder a tua conta.
+Ao usares os nossos Serviços, declaras, que toda a informação fornecida ao YouClap, designadamente Nome de Utilizador e de mais informações é verdadeira, exata, atual e completa, concordando em atualizar a respetiva informação, conforme necessário, para manter a veracidade e precisão da mesma.
+              </dd>
+              <dd>Não podes tentar impedir que outro utilizador utilize ou desfrute do YouClap, assim como não podes encorajar nem facilitar desrespeitos aos presentes Termos de Utilização nem de quaisquer outros termos do YouClap.
+              </dd>
+              <dd>Não podes utilizar nomes de domínios ou URLs da web no teu próprio nome de perfil de utilizador sem autorização prévia, por escrito, do YouClap.
+              </dd>
+              <dd>Não podes interferir nem perturbar o funcionamento do Serviço YouClap e respetivos servidores da rede ligados ao Serviço, incluindo através da transmissão de worms, vírus, spyware, malware ou de qualquer outro código de natureza destrutiva ou nociva. Não podes também injetar conteúdo ou código, nem alterar/afetar a apresentação da página do YouClap no browser ou nos dispositivos dos utilizadores.
+              </dd>
+              <dd>Também não podes criar contas no sistema através de meios não autorizados tais como dispositivos automatizados, como por exemplo, scripts, bots, spiders, crawlers ou scrapers.
+              </dd>
+              <!--<dd>Deves respeitar as Normas de Comunidade do YouClap, disponíveis no seguinte link https://help.youclap.tech/norms.-->
+              </dd>
+              <dd>O Desrespeito dos presentes Termos e Condições de Utilização pode, a critério do YouClap, resultar no encerramento da tua conta YouClap. Compreendes e concordas que o YouClap não pode ser e não será responsável por qualquer Conteúdo que publiques na aplicação YouClap e respetivos Serviços. 
+              </dd>
+              <dd>Consulta a nossa Política de Privacidade de dados (que se encontra disponível no seguinte link www.youclap.tech/legal/privacy) para saberes como guardamos os teus dados.
+              </dd>
+              <dt class="text-danger"><span>2</span>Termos Gerais de Utilização</dt>
+              <dd>Os Serviços YouClap estarão em constante atualização e evolução. Essas atualizações poderão acontecer sem aviso prévio ao Utilizador. O Serviço YouClap poderá parar quer temporariamente quer permanentemente aos utilizadores em geral sem ter sido fornecido um aviso prévio. Também mantemos o direito de criar limitações de uso e armazenamento, a nosso critério, a qualquer momento sem aviso prévio.
+Reservamos o direito, a nosso exclusivo critério, de alterar os presentes Termos de Utilização unilateralmente e sem prévia autorização dos utilizadores ou de terceiros, salvo se a alteração for por motivos legais. O utilizador concorda em como o podemos notificar sobre os Termos atualizados ao publicá-los no Serviço, e que a respetiva utilização do Serviço após a data de entrada em vigor dos novos Termos constitui a aceitação dos Termos atualizados. Como tal, o utilizador, antes de aceder aos nossos Serviços, deverá ler os presentes Termos de Utilização, bem como eventuais atualizações que possam surgir. Os presentes Termos de Utilização regem quaisquer litígios resultantes antes da data de entrada dos Termos atualizados.
+              </dd>
+              <dd>Podes também desativar temporariamente a tua conta YouClap. Todo o conteúdo criado e/ou partilhado por ti no Serviço YouClap (desde fotos, vídeos, texto e outros dados) deixarão de estar acessíveis na aplicação, ficando ocultos até iniciares novamente sessão no nosso Serviço.
+              </dd>
+              <dd>Mediante a cessação da tua conta de utilizador, todas as licenças e outros direitos concedidos a ti, nos presentes Termos de Utilização, cessam imediatamente.
+              </dd>
+              <dd>Reservamos o direito de recusar acesso ao Serviço, a qualquer pessoa, por qualquer motivo, em qualquer momento.
+              </dd>
+              <dd>És exclusivamente responsável pela respetiva interação com outros utilizadores do YouClap, quer online quer offline. Concordas que o YouClap não é responsável pela conduta de qualquer outro utilizador. O YouClap reserva-se ao direito, mas sem à obrigação de monitorizar ou de se envolver em litígios entre os utilizadores.
+              </dd>
+              <dd><span class="text-danger text-semibold">Quando participas num desafio e acabas por ser o vencedor (o utilizador com mais claps), podes ter direito a um prémio ou não, dependendo se aquando da criação do desafio, o respetivo criador anunciou um prémio ou não para o vencedor escolhido. 
+(Quando vences um desafio, ou seja, és o utilizador com mais claps, poderás ter direito a um prémio, caso o criador do desafio tenha anunciado algum prémio.)  O criador do desafio é responsável pela entrega do prémio, e esta não pode ser transferida para o YouClap. </span>O YouClap não terá quaisquer responsabilidades na entrega de prémios aos vencedores em caso de falha na entrega por parte dos criadores dos desafios, à exceção se o desafio foi criado pelo próprio YouClap. Todas as despesas (portes) decorrentes do envio dos prémios são suportadas pelo criador do desafio. O YouClap também não será responsável por suportar tais portes de envio dos prémios aos vencedores do desafio, à exceção se o desafio foi criado pelo próprio YouClap.
+              </dd>
+              <dd>Sempre que publicas conteúdo no YouClap em resposta a um desafio não te esqueças de respeitar os direitos de autor dos outros utilizadores. Para isso, cria posts autênticos e não copies conteúdo proveniente de terceiros, caso contrário poderás ter a tua conta bloqueada por desrespeitar direitos de autor de terceiros. O YouClap não se responsabiliza por desrespeitos de direitos de autor efetuados pelos utilizadores do YouClap, ao invés disso disponibiliza mecanismos e funcionalidades para comunicar tais desrespeitos de modo a melhorar a comunidade YouClap mantendo a autenticidade e criatividade do conteúdo na criação/resposta aos desafios.
+Quando crias conteúdo num desafio, estás a autorizar a partilha visual do mesmo (ou seja, todos os utilizadores podem visualizá-lo), mas não o podem obter.
+<span class="text-danger text-semibold">O criador do desafio, pode usar o conteúdo criado por um determinado utilizador (autor), porém o autor desse conteúdo tem de dar autorização (por escrito) ao utilizador interessado para usar o seu conteúdo e por sua vez o utilizador interessado tem de evidenciar que o conteúdo apresentado não é da sua autoria mas sim cedido por um terceiro, desta forma garantimos o respeito de direitos de autor e promoção dos trabalhos criativos de vários utilizadores.
+(O criador do desafio poderá utilizar o conteúdo criado por um determinado utilizador, apenas se o autor autorizar, por escrito, a utilização do mesmo. Adicionalmente, o criador terá que evidenciar a identidade do autor, garantindo assim o respeito dos direitos de autor.)
+</span>Caso o criador do desafio utilize o conteúdo de terceiros e não faça referências quanto ao autor, encontra-se a violar direitos de autor, desrespeitando-o a ele e a comunidade do YouClap, podendo mesmo ter a sua conta bloqueada por desrespeito de direitos de autor de terceiros. De referir que o YouClap não será responsabilizado por qualquer violação e/ou desrespeito de direitos de autor efetuados por utilizadores do YouClap, ao invés disso, disponibiliza mecanismos e funcionalidades para comunicar tais desrespeitos de modo a melhorar a comunidade do YouClap e a manter autenticidade e criatividade dos posts em resposta aos desafios.
+              </dd>
+              <dd>Concordas em como és responsável por todas as despesas de dados (dados móveis) em que incorres através da utilização do Serviço YouClap.
+              </dd>
+              <dt class="text-danger"><span>3</span>Os Direitos</dt>
+              <dd>O YouClap não reivindica propriedade de qualquer conteúdo publicado pelo utilizador. Ao invés, o utilizador concede ao YouClap uma licença não exclusiva, totalmente paga e isenta de direitos de autor, transferível, passível de sublicenciamento e de aplicação mundial para utilizar o conteúdo publicado pelo utilizador, sujeita à nossa Política de Privacidade que se encontra disponível para consulta no seguinte link: www.youclap.tech/legal/privacy.
+              </dd>
+              <dd>Declaras e garantes que: <br>
+&nbsp; &nbsp; &nbsp; &nbsp;1. &nbsp; &nbsp;És o proprietário do conteúdo que publicas no Serviço ou que de algum modo dispões do direito de ceder os direitos e licenças estipuladas nos presentes Termos de Utilização;<br>
+&nbsp; &nbsp; &nbsp; &nbsp;2. &nbsp; &nbsp;A publicação do teu conteúdo através do Serviço YouClap não desrespeita, não constitui apropriação indevida nem infringe os direitos de terceiros, incluindo mas não limitado a direitos de privacidade, publicidade, autor, marca comercial e/ou outros direitos de propriedade;<br>
+&nbsp; &nbsp; &nbsp; 3. &nbsp; &nbsp;Pagarás quaisquer direitos de autor, taxas e quantias devidas ao conteúdo que publiques no Serviço YouClap; <br>
+&nbsp; &nbsp; &nbsp; 4. &nbsp; &nbsp;Tens o direito e capacidade legal de subscrever os presentes Termos de Utilização na respectiva jurisdição. </dd>
+              <dd>O Serviço contém conteúdo que é da autoria/propriedade do YouClap ou licenciado por este. O Conteúdo do YouClap está protegido por direitos de autor, marca comercial, patente, segredo comercial e outras leis e, tal como entre o utilizador e o YouClap, o YouClap é proprietário e preserva todos os direitos sobre o Conteúdo do YouClap e o Serviço. O utilizador não pode remover, alterar ou ocultar qualquer marca de direitos de autor, marca comercial, marca de serviço ou outras notificações de direitos de propriedade que acompanham o Conteúdo do YouClap. O utilizador não pode também reproduzir, modificar, adaptar, preparar trabalhos derivados com base em, executar, exibir, publicar, distribuir, transmitir, difundir, vender, licenciar ou de algum modo explorar o Conteúdo do YouClap.
+              </dd>
+              <dd>O nome e o logótipo do YouClap são marcas comerciais do YouClap, que não podem ser copiadas, imitadas ou utilizadas, total ou parcialmente sem autorização prévia por escrito do YouClap, salvo em conformidade com as nossas normas de marca, disponibilizada no seguinte link brand.youclap.tech. Todos os cabeçalhos de página, gráficos personalizados, ícones, botões, e scripts são marcas de serviço, marcas comerciais e/ou imagens de marca do YouClap e não podem ser copiadas, imitadas ou utilizadas, total ou parcialmente sem autorização prévia por escrito do YouClap.
+              </dd>
+              <dd>O YouClap não é responsável perante o utilizador por qualquer modificação, suspensão ou interrupção dos Serviços ou perda total ou parcial de qualquer conteúdo.
+              </dd>
+              <dd>Salvo estabelecido na Política de Privacidade, disponibilizada no seguinte link: www.youclap.tech/legal/privacy, entre ti e o YouClap, qualquer conteúdo será não confidencial e não proprietário do YouClap, que também não será responsabilizado por qualquer utilização ou divulgação do conteúdo. Reconheces e concordas que a respetiva relação com o YouClap não é confidencial, fiduciária, nem qualquer outro tipo de relação especial, e que a tua decisão em submeter qualquer conteúdo não coloca o YouClap numa posição diferente dos demais utilizadores. Em suma, nenhum conteúdo que publicas estará sujeito a qualquer obrigação de confidencialidade por parte do YouClap, e o YouClap não será responsável por qualquer obrigação ou divulgação de qualquer conteúdo fornecido por ti.
+              </dd>
+              <dt class="text-danger"><span>4</span>Comunicar desrespeitos de direitos de Autor e propriedades Intelectuais, denúncias</dt>
+              <dd>O YouClap respeita os direitos de terceiros, portanto esperamos que tu também o faças.
+Se infringires repetidamente os direitos de propriedade de terceiros, o YouClap procederá à desativação da tua conta, quando apropriado.
+              </dd>
+              <dd>Podes consultar o seguinte link help.youclap.tech/report <span class="text-danger text-semibold">de modo a comunicar desrespeitos de direitos de autor e/ou propriedade(s) intelectuais</span> efetuados por outros utilizadores de modo a manter a comunidade do YouClap unida, respeitando os presentes Termos de Utilização.
+              </dd>
+              <dt class="text-danger"><span>5</span>Exclusão de garantias</dt>
+              <dd>De acordo com o máximo permitido por lei, nem o YouClap, nem os seus colaboradores, independentemente do seu vínculo contratual e/ou da sua existência efetuam quaisquer declarações, garantias ou apoios, de qualquer tipo, expressos ou implícitos, relativamente:</br>
+●	ao Serviço YouClap;</br>
+●	ao conteúdo do YouClap;</br>
+●	ao conteúdo dos utilizadores;</br>
+●	à segurança associada à transmissão de informação para o YouClap.
+              </dd>
+              <dd>O YouClap não pode garantir que a aplicação e respetivos Serviços estão isentos de erros ou interrupções, não se responsabilizando por quaisquer danos ou prejuízos que os mesmos possam causar aos utilizadores. O YouClap garante que tudo fará para corrigir tais situações fortuitas.
+              </dd>
+              <dd>O YouClap não será responsável, perante o Utilizador, por quaisquer perdas ou danos, de qualquer tipo, que estejam direta ou indiretamente relacionados designadamente com:</br>
+●	o uso ou incapacidade de uso, por parte do Utilizador, ou desempenho da aplicação e respetivos Serviços;</br>
+●	qualquer ação tomada em ligação a proprietários de direitos de autor ou de propriedade intelectual;</br>
+●	quaisquer erros ou omissões no funcionamento da aplicação e respetivos Serviços;</br>
+●	quaisquer danos no smartphone do Utilizador, independentemente da sua origem, incluindo mas não limitando danos resultantes de qualquer falha de segurança ou de qualquer vírus, bug, erro, omissão, interrupção, defeito de qualquer ordem, falha de linha ou software, ou qualquer outra avaria.
+              </dd>
+              <dd>Em nenhum caso o YouClap será responsável, perante o Utilizador ou qualquer outra pessoa, por perdas, danos ou ferimentos, incluindo mas não limitado a morte ou ferimentos pessoais.
+              </dd>
+              <dd>O YouClap rejeita responsabilidades perante qualquer pessoa ou entidade por quaisquer perdas, danos ou outra causa, de qualquer outro tipo, baseada em/ou resultante da utilização do Serviço com desrespeito pelas nossas condições e políticas.
+              </dd>
+              <dd>O YouClap não se responsabiliza pelas ações e omissões, conteúdo, informação ou dados de terceiros. O Utilizador isenta o YouClap, e respetivos colaboradores, de quaisquer reclamações e danos, conhecidos e desconhecidos, resultantes e/ou relacionados, de algum modo, com qualquer reclamação que possa ter contra tais terceiros.
+              </dd>
+              <dt class="text-danger"><span>6</span>Legislação aplicável</dt>
+              <dd>Os presentes Termos de Utilização são regidos e interpretados em conformidade com a Lei portuguesa e regem-se, designadamente, pela Lei n.º 67/98 de 26 de Outubro que regula a Lei da Proteção de Dados Pessoais alterada, recentemente, pela Lei n.º 103/2015 de 24 de Outubro que veio aditar o artigo 45.º - referente à inserção de dados falsos, Constituição da República Portuguesa, artigo 35.º.
+              </dd>
+              <dd><span class="text-danger text-semibold">Última atualização: </span>20 de Agosto de 2016
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-3 text-right">
+            <a href="mailto:support@youclap.tech" class="text-smaller">support@youclap.tech</a>
+            <p class="text-smaller">Fulltime support</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- Legal Notice End -->
+
+    <!-- Footer -->
+    <footer class="footer padding-top-3x">
+      <div class="container space-top">
+  
+        <!-- Footer Head -->
+        <div class="footer-head">
+          <div class="logo">
+            <img src="img/logo-small.png" alt="YouClap">
+          </div>
+          <div class="info">
+            <h2>YouClap</h2>
+            <a href="index.html" class="btn btn-ghost btn-danger">Get YouClap!</a>
+          </div>
+        </div>
+        <div class="body padding-top-2x">
+          <!-- Copyright -->
+  
+          <nav class="column footer-nav">
+            <ul>
+              <li><p>2016 &copy;YouClap
+              <!-- | <a href="legal.html">Terms</a> | <a href="legal.html">Legal</a>--></p></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+
+    <!-- Javascript (jQuery) Libraries and Plugins -->
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+    <script src="js/plugins/velocity.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/form-plugins.js"></script>
+    <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body><!-- Body End-->
+</html>
