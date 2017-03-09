@@ -1773,19 +1773,20 @@ label.hover {
 	height: 36px;
 	color: #fff;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 16px;
 	-webkit-backface-visibility: hidden;
 	margin-bottom: 65px;
 }
 .scroll-more:hover,
 .scroll-more:focus {
-	color: #fff;
+	color: #eb5e51;
 	text-decoration: none;
 }
 .scroll-more span {
 	display: inline-block;
 	vertical-align: middle;
-	opacity: .3;
+	opacity: 1;
+	color: #fff;
 	-webkit-transition: opacity 0.3s;
 					transition: opacity 0.3s;
 }
@@ -1798,7 +1799,7 @@ label.hover {
 	width: 36px;
 	height: 36px;
 	vertical-align: middle;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 50%;
 	margin-right: 8px;
 	padding: 8px 0 0 12px;
@@ -1808,7 +1809,7 @@ label.hover {
 	width: 10px;
 	height: 18px;
 	content: "";
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 12px;
 }
 .scroll-more .icon:after {
