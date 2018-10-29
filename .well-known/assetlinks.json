@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "tech.youclap.android",
+    "sha256_cert_fingerprints":
+    ["32:18:FD:C1:87:00:5A:D7:B7:EB:0F:0B:4D:F1:FA:13:F5:00:96:F4:6A:E3:1C:EA:C9:2D:8A:3B:3E:FF:16:B0"]
+  }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "tech.youclap.android.dev",
+    "sha256_cert_fingerprints":
+    ["C7:7A:80:D5:94:D9:04:2D:B9:8C:BD:BC:FE:5F:4B:5A:49:0A:6B:94:CB:9B:40:95:07:92:82:E5:50:E8:05:C1"]
+  }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "tech.youclap.android.dev.debug",
+    "sha256_cert_fingerprints":
+    ["41:43:56:E9:5C:25:38:B2:09:ED:81:BB:21:3E:4D:F0:4A:D0:79:09:99:BF:AB:7C:F3:DB:F2:BD:A5:DF:8D:0E"]
+  }
+}]

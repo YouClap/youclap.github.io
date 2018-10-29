@@ -1,0 +1,17 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "L7M5QPWXUR.tech.youclap.ios",
+            "paths": [ "/profile/*", "/group/*", "/challenge/*"]
+        },
+        {
+            "appID": "L7M5QPWXUR.tech.youclap.ios.dev.debug",
+            "paths": [ "/profile/*", "/group/*", "/challenge/*"]
+        },
+        {
+            "appID": "L7M5QPWXUR.tech.youclap.ios.dev",
+            "paths": [ "/profile/*", "/group/*", "/challenge/*"]
+        }]
+    }
+}
