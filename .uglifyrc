@@ -1,0 +1,15 @@
+{
+    parse: {
+        bare_returns: true
+    },
+    compress: {
+        drop_console: true
+    },
+    output: {
+        // output options
+    },
+    sourceMap: {
+        // source map options
+    },
+    safari10: true
+}

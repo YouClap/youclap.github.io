@@ -193,3 +193,54 @@ function fauxClick(x, y) {
   fauxClick.pageY = y;
   document.dispatchEvent(fauxClick);
 }
+
+// Starting optimized part
+
+const loadRevoSlider = () => {
+	jQuery(document).ready(function () {
+		jQuery("#rev_slider_280_1").show().revolution({
+			sliderType: "hero",
+			jsFileLocation: "revo-slider/js/",
+			sliderLayout: "fullscreen",
+			dottedOverlay: "none",
+			delay: 9000,
+			responsiveLevels: [1240, 1024, 778, 480],
+			visibilityLevels: [1240, 1024, 778, 480],
+			gridwidth: [1240, 1024, 778, 480],
+			gridheight: [868, 768, 500, 720],
+			lazyType: "none",
+			parallax: {
+				type: "3D",
+				origo: "slidercenter",
+				speed: 1000,
+				levels: [0, 10, 15, 20, 25, 30, 5, 0, 45, 50, 47, 48, 49, 50, 51, 55],
+				type: "3D",
+				ddd_shadow: "off",
+				ddd_bgfreeze: "off",
+				ddd_overflow: "hidden",
+				ddd_layer_overflow: "visible",
+				ddd_z_correction: 65,
+				disable_onmobile: "on"
+			},
+			shadow: 0,
+			spinner: "off",
+			autoHeight: "off",
+			fullScreenAutoWidth: "off",
+			fullScreenAlignForce: "off",
+			fullScreenOffsetContainer: "",
+			fullScreenOffset: "",
+			disableProgressBar: "on",
+			hideThumbsOnMobile: "off",
+			hideSliderAtLimit: 0,
+			hideCaptionAtLimit: 0,
+			hideAllCaptionAtLilmit: 0,
+			debugMode: false,
+			fallbacks: {
+				simplifyAll: "off",
+				disableFocusListener: false,
+			}
+		});
+	});
+};
+
+loadRevoSlider() 
