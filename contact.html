@@ -75,22 +75,24 @@
                             <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                                 <h3>Leave A Comment</h3>
                                 <div class="default-form contact-form">
-                                    <form method="post" action="sendemail.php" id="contact-form">
+                                    <form method="post" id="contact-form" action="">
                                         <div class="row clearfix">
                                             <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                                 <input type="text" name="username" value="" placeholder="Name" required>
                                             </div>
                                             <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="email" value="" placeholder="Email" required>
+                                                <input type="email" name="email" value="" placeholder="Email" required>
                                             </div>
                                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <textarea name="message" placeholder="Message"></textarea>
-                                                <span><input type="checkbox" required name="terms"> By using this form you agree with the <a href="termsofservice.html" target="_blank"><u>Terms of Service</u></a></span>
+                                                <textarea name="message" placeholder="Message" required></textarea>
+                                                <span><input type="checkbox" name="terms" required> By using this form you agree with the <a href="termsofservice.html" target="_blank"><u>Terms of Service</u></a></span>
                                             </div>
                                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                                 <button type="submit" class="theme-btn btn-style-three">Send</button>
+                                                <span id="contact-form-submit-loader" class="submit-loader" />
                                             </div>
                                         </div>
+                                        <div id="contact-form-feedback" class="form-group form-feedback display-none">Thanks for your feedback.</div>
                                     </form>
                                 </div>
                             </div>
@@ -128,7 +130,8 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" async></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js" async></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js" async></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+        <script src="js/contact.min.js" async></script>
         <script src="js/script.min.js" async></script>
     </body>
 </html>

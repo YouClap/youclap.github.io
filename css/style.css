@@ -4260,3 +4260,35 @@ img{
 	line-height:26px;
 	text-transform:uppercase;
 }
+
+.form-group.form-feedback {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+	border: 2px solid #ff0000;
+	text-align: center;
+}
+
+.form-group.form-feedback.display-none {
+	display: none;
+}
+
+.form-group.form-feedback.form-mail-sent-ok {
+	border: 2px solid #398f14;
+	display: block;
+}
+
+.form-group .submit-loader {
+	background-image: url(../images/ajax-loader.gif);
+	display: inline-block;
+	visibility: hidden;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+
+.form-group .submit-loader.loading {
+	visibility: visible;
+}
