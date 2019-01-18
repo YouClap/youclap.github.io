@@ -1,3 +1,12 @@
+jQuery(document).ready(function(){
+	jQuery('.stripClose').click(function(e){
+	  e.preventDefault();
+	  var parent = $(this).parent('.strip');
+	  parent.fadeOut("slow", function() { $(this).remove(); } );
+	});
+  });
+
+
 (function($) {
 
 
