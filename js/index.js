@@ -7,7 +7,7 @@ var animations = [];
 var circles = [];
 
 var colorPicker = (function() {
-  var colors = ["#52bcb8", "#4a85c5", "#e73a35", "#282741"];
+  var colors = ["#10A6A0", "#4a85c5", "#e73a35", "#373737"];
   var index = 0;
   function next() {
     index = index++ < colors.length-1 ? index : 0;
